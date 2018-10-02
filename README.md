@@ -71,8 +71,61 @@ Equations like pictoral linear equations popular on social media.
 [Carter Schonwald](https://github.com/cartazio) open source R/D from Megacorp financial services in New York working on a Linear Logic specification standard as user friendly as SQL. 
 
 
-Extra Links:
+## Extra Links:
 [Wikipedia entry](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories)
 
 [SMT-LIB standard](http://smtlib.cs.uiowa.edu)
+
+## Snippets
+SMT-LIB syntax is a Lisp.
+
+```lisp
+(echo "print something")
+```
+
+Here is an example that delares an integer "a", a function Int f(Int, Bool), requires "a" to be greater than ten, and requires f(a, True) to be less than one hundred.
+```lisp
+(declare-const a Int)
+(declare-fun f (Int Bool) Int)
+(assert (> a 10))
+(assert (< (f a true) 100))
+(check-sat)
+(get-model)
+```
+It will return something like:
+
+```lisp
+sat
+(model 
+  (define-fun a () Int
+    11)
+  (define-fun f ((x!1 Int) (x!2 Bool)) Int
+    (ite (and (= x!1 11) (= x!2 true)) 0
+      0))
+)
+```
+We use (push) and (pop) to add and remove constraints as we go.
+
+Here is the Python syntax for the Z3 solver.
+
+```python
+from z3 import *
+
+x = Real('x')
+y = Real('y')
+s = Solver()
+s.add(x + y > 5, x > 1, y > 1)
+print(s.check())
+print(s.model())
+```
+
+[Pull request](https://github.com/DennisYurichev/yurichev.com/pull/2/files) showing how to use the Z3 optimizer syntax and convert from Z3 variable data types to basic Python datatypes.
+
+
+
+
+
+
+
+
 
