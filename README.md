@@ -118,6 +118,12 @@ s.add(x + y > 5, x > 1, y > 1)
 print(s.check())
 print(s.model())
 ```
+It will return:
+```bash
+sat
+[y = 3/2, x = 4]
+```
+
 
 [Pull request](https://github.com/DennisYurichev/yurichev.com/pull/2/files) showing how to use the Z3 optimizer syntax and convert from Z3 variable data types to basic Python datatypes.
 
