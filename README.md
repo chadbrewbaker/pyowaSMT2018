@@ -1,15 +1,14 @@
-#Pyowa October 2018
-#SMT Solvers
+# SMT Solvers, Pyowa October 2018
 
-## Chad Brewbaker
-## Flying Dog Solutions
-## chad@flyingdogsolutions.com
-## @SMT\_SOLVERS
+Chad Brewbaker
+Flying Dog Solutions
+chad@flyingdogsolutions.com
+@SMT\_SOLVERS
 
 (This will be republished as the Awesome SMT FAQ)
 
 
-When did SMT solvers become available?
+## When did SMT solvers become available?
 
 Around 2005. They built upon advances in SAT solvers from the early 2000s.
 
@@ -20,7 +19,7 @@ SAT is a subroutine use to solve [NP-Complete Problems](https://en.wikipedia.org
   
 
 
-What problems can SMT solvers be used on?
+## What problems can SMT solvers be used on?
 
 Traditional NP-Complete problems that SAT solvers are used for like solving Minesweeper.
 
@@ -50,11 +49,11 @@ Equations like pictoral linear equations popular on social media.
 * Database row locking by contract
 * Formal specification of cloud service guarentees
 
-Where do I get a SMT solver?
+## Where do I get a SMT solver?
 [Z3](https://github.com/Z3Prover/z3) is Micosoft's open source SMT solver behind the Visual Studio Intellitest product.
 [CVC4](https://cvc4.cs.stanford.edu/web/) is sponsored by Google and has an embeddable Android version in the works if it hasn't been relased yet.
 
-Who do I go to for more information?
+## Who do I go to for more information?
 [Cesare Tinelli](http://homepage.cs.uiowa.edu/~tinelli/) at University of Iowa maintains the SMT-LIB stanard. 
 [Nikolaj Bjorner](https://github.com/Z3Prover/z3test) at Microsoft is very responsive to bug Z3 bug fixes if you send him a failing test case.
 [Galois](https://saw.galois.com) offers SMT services to U.S. Department of Defense.
