@@ -92,6 +92,16 @@ Here is an example that delares an integer "a", a function Int f(Int, Bool), req
 (check-sat)
 (get-model)
 ```
+For those familiar with a ALGOL language like C++ or Java
+
+```cpp
+const int a;
+int f(int, bool);
+assert( a> 10);
+assert( f(a,true) < 100 );
+```
+
+
 It will return something like:
 
 ```lisp
@@ -100,10 +110,25 @@ sat
   (define-fun a () Int
     11)
   (define-fun f ((x!1 Int) (x!2 Bool)) Int
-    (ite (and (= x!1 11) (= x!2 true)) 0
+    (ite (and (= x!1 11) (= x!2 true)) 21
       0))
 )
 ```
+Which in C++ would be: 
+
+```cpp
+int a(){ return 11; }
+
+int f(int x1, bool x2){
+ if(x1 == 11 && x2 == true)
+	return 21;
+ else
+   return 0;
+}
+
+```
+
+
 We use (push) and (pop) to add and remove constraints as we go.
 
 Here is the Python syntax for the Z3 solver.
