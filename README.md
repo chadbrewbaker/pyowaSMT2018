@@ -54,18 +54,25 @@ Equations like pictoral linear equations popular on social media.
 
 ## Where do I get a SMT solver?
 [Z3](https://github.com/Z3Prover/z3) is Micosoft's open source SMT solver behind the Visual Studio Intellitest product.
+
 [CVC4](https://cvc4.cs.stanford.edu/web/) is sponsored by Google and has an embeddable Android version in the works if it hasn't been relased yet.
 
 ## Who do I go to for more information?
 [Cesare Tinelli](http://homepage.cs.uiowa.edu/~tinelli/) at University of Iowa maintains the SMT-LIB stanard. 
+
 [Nikolaj Bjorner](https://github.com/Z3Prover/z3test) at Microsoft is very responsive to bug Z3 bug fixes if you send him a failing test case.
+
 [Galois](https://saw.galois.com) offers SMT services to U.S. Department of Defense.
+
 [Levent Erkok](https://github.com/leventerkok) maintains the Haskell SBV project with alllows you to call several SMT solvers in parallel to compare solutions.
+
 [Dennis Yurichev](https://yurichev.com/writings/SAT_SMT_by_example.pdf) Maintains a cookbook of examples. 
+
 [Carter Schonwald](https://github.com/cartazio) open source R/D from Megacorp financial services in New York working on a Linear Logic specification standard as user friendly as SQL. 
 
 
 Extra Links:
 [Wikipedia entry](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories)
+
 [SMT-LIB standard](http://smtlib.cs.uiowa.edu)
 
