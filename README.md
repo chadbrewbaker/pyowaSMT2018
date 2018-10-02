@@ -1,8 +1,11 @@
 # SMT Solvers, Pyowa October 2018
 
 Chad Brewbaker
+
 Flying Dog Solutions
+
 chad@flyingdogsolutions.com
+
 @SMT\_SOLVERS
 
 (This will be republished as the Awesome SMT FAQ)
